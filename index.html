@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500;700&family=Figtree:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inria+Sans:ital,wght@1,300&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Itim&family=Jost:ital,wght@0,100;0,200;0,400;0,500;1,200&family=Kumbh+Sans:wght@100;600&family=Outfit:wght@300;400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,500&family=Raleway:wght@400;700&family=Red+Hat+Display:wght@500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&family=Syne:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Mark Añasco | Web Designer</title>
+    <link rel="stylesheet" href="custom.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#" class="logo"><img src="img/logo (7).png" /></a>
+        <ul class="nav-links">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Project</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <button class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </nav>
+    </header>
+
+    <div class="sidebar">
+      <button class="close-sidebar">&times;</button>
+      <ul class="sidebar-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- HERO -->
+
+    <main>
+      <div class="hero__section">
+        <div class="left__main">
+          <h1>Web Designer & Front-end Developer</h1>
+          <p>
+            Hi there! i am Mark Añasco, As a passionate Web Designer and Web
+            developer based in cebu philippines.
+          </p>
+          <a href="https://github.com/MarkAnasco14" target="_blank">
+            <img src="img/githublogo.png" class="Github" />
+          </a>
+        </div>
+        <div class="right__main">
+          <img src="img/profile.png" alt="profile" />
+        </div>
+      </div>
+    </main>
+
+    <section class="about__container" id="about">
+      <div>
+        <h2>About Me</h2>
+        <span>👋🏽</span>
+        <h4 class="about__me">
+          Hi there! i am Mark Añasco, As a passionate Web Designer and web
+          developer with a keen eye for design and a knack for building seamless
+          user experiences. I specialize in crafting captivating UI interfaces
+          through the power of Figma, and breathe life into them using web
+          development languages like HTML, CSS, and JavaScript.
+        </h4>
+      </div>
+    </section>
+
+    <section class="projects__container" id="projects">
+      <div class="projects__header">
+        <div>
+          <h2>Projects</h2>
+        </div>
+        <span class="quote"> what are you waiting? top up now</span>
+      </div>
+
+      <div class="projects__main__container">
+        <div class="projects">
+          <div class="projects__web__container">
+            <div class="left__image">
+              <img
+                src="https://assets-global.website-files.com/6398605b5541055872b8d486/639af71b5d394f6a82e1c7c4_Rectangle%201121.webp"
+                alt=""
+              />
+            </div>
+            <div class="right__project">
+              <h3>Grindo <span>Coffee</span></h3>
+              <p>
+                Since 1970, our family has been on a mission to provide
+                sustainable and ethical, hand-roasted, speciality coffee, at a
+                fair price for you and the farmers.
+              </p>
+
+              <div class="project__links">
+                <a :href="items.projectLink" target="_blank">Live Demo </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="contacts__container" id="contact">
+        <div class="contacts__header">
+          <div>
+            <h2>Contact</h2>
+            <span>📧</span>
+          </div>
+        </div>
+        <div class="contacts">
+          <div>
+            <img
+              src="https://jamessdev.vercel.app/assets/gmail-6497f877.png"
+              class="Email__image"
+            />
+            <div class="contact__email">
+              <span class="emailtag">Email:</span>
+              <span>markanasco55@gmail.com</span>
+            </div>
+          </div>
+        </div>
+        <div class="contacts">
+          <div>
+            <img
+              src="https://jamessdev.vercel.app/assets/phone-call-ddd31e53.png"
+              class="Email__image"
+            />
+            <div class="contact__email">
+              <span class="phone__number">Phone number:</span>
+              <span class="number">0960 865 3930</span>
+            </div>
+          </div>
+        </div>
+        <div class="contacts">
+          <div>
+            <img src="img/linkin-removebg-preview.png" class="Email__image" />
+            <div class="contact__email">
+              <span class="emailtag">Linkedin:</span>
+              <span class="linkedin__tag">Mark Añasco</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="center__text">
+        <p>Want to talk with your next project?</p>
+        <p>&copy; 2024 Template from: James Anquillano Coded by: Mark Añasco</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
