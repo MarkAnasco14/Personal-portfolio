@@ -132,6 +132,7 @@ header {
   width: 100%;
 }
 
+
 .logo,
 .nav-links {
   justify-content: center;
@@ -159,11 +160,38 @@ a {
   align-content: center;
 }
 
-.hamburger {
+/* .hamburger {
   display: none;
   float: right;
   margin-top: -2rem;
   cursor: pointer;
+} */
+
+.hamburger {
+  display: none; /* Make the button visible */
+  position: absolute; /* Position it independently */
+  top: 25px; /* Adjust vertical position as needed */
+  right: 15px; /* Adjust horizontal position as needed */
+  width: 30px; /* Set width */
+  height: 24px; /* Set height */
+  padding: 0; /* Remove default button padding */
+  border: none; /* Remove default button border */
+  background: none; /* Remove default button background */
+  cursor: pointer; /* Indicate interactivity */
+}
+
+.hamburger .bar {
+  display: block; /* Make the bars visible */
+  width: 100%; /* Fill the button width */
+  height: 4px; /* Set bar height */
+  background-color: #333; /* Set bar color */
+  margin-bottom: 5px; /* Create spacing between bars */
+  transition: all 0.3s ease-in-out; /* Add smooth transition effect */
+}
+
+/* Transition effect on hover */
+.hamburger:hover .bar {
+  background-color: #fff; /* Change bar color on hover */
 }
 
 .bar {
@@ -185,6 +213,13 @@ a {
   overflow-y: auto;
   z-index: 99;
 }
+
+
+
+/* .sidebar.open {
+  right: 0; // Slide it to the right edge
+} */
+
 
 .sidebar-links {
   padding: 20px;
@@ -220,6 +255,15 @@ a {
   right: 10px;
   font-size: 30px;
   cursor: pointer;
+  background-color: #5e5b5b; /* Set bar color */
+   width: 30px; /* Set width */
+  height: 40px; /* Set height */
+  padding: 0; /
+ 
+}
+
+.close-sidebar:hover .&times{
+  background-color: #f3f3f3;
 }
 
 .sidebar.active {
@@ -239,6 +283,8 @@ a {
 }
 
 /* HERO */
+
+
 .hero__section {
   display: flex;
   justify-content: space-around;
@@ -285,6 +331,17 @@ a {
   margin-top: 2rem;
 }
 /* about */
+
+.icons{
+  display: flex;
+  height: 40px;
+  width: 40px;
+  margin: 0 auto;
+  margin-top: 3rem;
+  gap: 2rem;
+}
+
+
 
 .about__container {
   margin: 12rem auto 0 auto;
@@ -425,7 +482,7 @@ h3 {
   margin-right: 8.5rem;
 }
 .phone__number {
-  margin-right: 8.5rem;
+  margin-right: 10rem;
 }
 .number {
   margin-right: 7rem;
@@ -564,6 +621,9 @@ footer p {
     max-width: none;
 
   }
+ .icons{
+  margin-left: 1rem;
+ }
 }
 
 @media screen and (max-width: 700px) {
@@ -623,6 +683,10 @@ footer p {
     height: 400px;
   }
 
+  .icons{
+    margin-left: 3rem;
+  }
+
   .Github{
     margin-top: -8rem;
   }
@@ -634,4 +698,57 @@ footer p {
   .center__text{
     margin-top: 2rem;
   }
+
+  .logo img{
+  height: 40px;
+  width: 140px;
 }
+
+.about__me{
+  font-size: 1.3rem;
+}
+
+}
+
+
+ @media screen and (max-width: 375px) {
+  .right__main img {
+    width: 400px;
+    height: 300px;
+  }
+  .left__main p{
+    width: 300px;
+    height: 400px;
+  }
+
+  .icons{
+    margin-left: 3rem;
+  }
+
+  .Github{
+    margin-top: -8rem;
+  }
+
+  footer {
+    padding: 3rem 2rem;
+  }
+
+  .center__text{
+    margin-top: 2rem;
+  }
+
+  .logo img{
+  height: 40px;
+  width: 140px;
+}
+
+.about__me{
+  font-size: 1rem;
+}
+
+.quote{
+  font-size: 1rem;
+}
+
+}
+
