@@ -708,6 +708,10 @@ footer p {
   font-size: 1.3rem;
 }
 
+.phone__number {
+  width: 100px;
+}
+
 }
 
 
@@ -748,6 +752,14 @@ footer p {
 
 .quote{
   font-size: 1rem;
+}
+
+.phone__number {
+  width: 80px;
+}
+  
+.number{
+  width: 111px;
 }
 
 }
